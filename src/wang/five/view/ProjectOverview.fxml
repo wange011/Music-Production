@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wang.five.view.ProjectOverviewController">
+   <content>
+      <AnchorPane fx:id="myAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#inputOrnament" prefWidth="600.0">
+         <children>
+            <AnchorPane onMouseClicked="#inputOrnament" prefHeight="26.0" prefWidth="600.0">
+               <children>
+                  <MenuBar fx:id="myMenuBar" prefHeight="25.0" prefWidth="188.0" AnchorPane.bottomAnchor="373.0">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="Add">
+                           <items>
+                              <MenuItem fx:id="addMeasureMI" mnemonicParsing="false" onAction="#handleAddMeasure" text="Measure" />
+                              <MenuItem fx:id="addNoteMI" mnemonicParsing="false" onAction="#handleAddNote" text="Note" />
+                              <MenuItem fx:id="addOrnamentMI" mnemonicParsing="false" onAction="#handleAddOrnament" text="Ornament" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                           <items>
+                              <MenuItem fx:id="editNoteMI" mnemonicParsing="false" onAction="#handleEditNote" text="Note" />
+                              <MenuItem fx:id="editOrnamentMI" mnemonicParsing="false" onAction="#handleEditOrnament" text="Ornament" />
+                              <MenuItem fx:id="editTimeSigMI" mnemonicParsing="false" onAction="#handleEditTimeSig" text="Time Signature" />
+                              <MenuItem fx:id="editKeySigMI" mnemonicParsing="false" onAction="#handleEditKeySig" text="Key Signature" />
+                              <MenuItem fx:id="editTempoMI" mnemonicParsing="false" onAction="#handleEditTempo" text="Tempo" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Delete">
+                           <items>
+                              <MenuItem fx:id="delMeasureMI" mnemonicParsing="false" onAction="#handleDeleteMeasure" text="Measure" />
+                              <MenuItem fx:id="delNoteMI" mnemonicParsing="false" onAction="#handleDeleteNote" text="Note" />
+                              <MenuItem fx:id="delOrnamentMI" mnemonicParsing="false" onAction="#handleDeleteOrnament" text="Ornament" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+                  <TextField fx:id="myTxtFld" layoutX="207.0" layoutY="2.0" />
+                  <Label fx:id="errorLbl" layoutX="362.0" layoutY="6.0" text="label" textFill="#b70d0d" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

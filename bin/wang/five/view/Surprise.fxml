@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="myAnchorPane" onMouseClicked="#display" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wang.five.view.SurpriseController">
+   <children>
+      <ImageView fx:id="myImgVw" fitHeight="180.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <Label layoutX="186.0" layoutY="25.0" text="This code was written by Ethan Wang." AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="14.0" />
+   </children>
+</AnchorPane>

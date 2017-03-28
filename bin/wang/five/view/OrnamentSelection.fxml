@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vvalue="1.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wang.five.view.OrnamentSelectionController">
+   <content>
+      <AnchorPane prefHeight="397.0" prefWidth="598.0">
+         <children>
+            <ButtonBar layoutX="390.0" layoutY="357.0" prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                  <Button fx:id="myBtnOK" mnemonicParsing="false" onAction="#handleOK" text="OK" />
+                  <Button fx:id="myBtnCancel" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+               </buttons>
+            </ButtonBar>
+            <Label fx:id="errorLbl" layoutX="68.0" layoutY="279.0" text="Label" textFill="#b70505" />
+            <Label layoutX="68.0" layoutY="31.0" text="Select Ornament Type" />
+            <RadioButton fx:id="rdBtnTrill" layoutX="68.0" layoutY="89.0" mnemonicParsing="false" text="Trill" />
+            <RadioButton fx:id="rdBtnFermata" layoutX="68.0" layoutY="129.0" mnemonicParsing="false" text="Fermata" />
+            <RadioButton fx:id="rdBtnForte" layoutX="68.0" layoutY="166.0" mnemonicParsing="false" text="Forte" />
+            <RadioButton fx:id="rdBtnCres" layoutX="212.0" layoutY="89.0" mnemonicParsing="false" text="Crescendo" />
+            <RadioButton fx:id="rdBtnPiano" layoutX="212.0" layoutY="129.0" mnemonicParsing="false" text="Piano" />
+            <RadioButton fx:id="rdBtnPP" layoutX="212.0" layoutY="166.0" mnemonicParsing="false" text="Pianissimo" />
+            <RadioButton fx:id="rdBtnDim" layoutX="347.0" layoutY="89.0" mnemonicParsing="false" text="Diminuendo" />
+            <RadioButton fx:id="rdBtnMP" layoutX="347.0" layoutY="129.0" mnemonicParsing="false" text="Mezzo Piano" />
+            <RadioButton fx:id="rdBtnFF" layoutX="347.0" layoutY="166.0" mnemonicParsing="false" text="Fortissimo" />
+            <RadioButton fx:id="rdBtnRitard" layoutX="473.0" layoutY="89.0" mnemonicParsing="false" text="Ritardando" />
+            <RadioButton fx:id="rdBtnMF" layoutX="473.0" layoutY="129.0" mnemonicParsing="false" text="Mezzo Forte" />
+            <RadioButton fx:id="rdBtnComment" layoutX="473.0" layoutY="166.0" mnemonicParsing="false" text="Comment" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
